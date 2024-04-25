@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oxygen:wght@300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+body:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.brand-title {
+    font-size: 2.0rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;    
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 1.5rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.intro {
+    background-color: white;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+}
+
+.intro2 {
+    background-color: #262626;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+}
+
+.teksti {
+    padding: 1.5rem 0;
+    padding-left: 50px;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    max-width: 30rem;
+    float: left;
+}
+
+.teksti2 {
+    padding: 1.5rem 0;
+    padding-left: 50px;
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    max-width: 30rem;
+    float: left;
+    margin-left: 20%;
+}
+
+.kuntosalikuva {
+    padding: 2.0rem 0;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 20%;
+}
+
+.kuntosalikuva2 {
+    padding: 2.0rem 0;
+    padding-left: 50px;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.tiedot {
+    background-color: #262626;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;  
+}
+
+.ajat {
+    padding: 2.5rem 0;
+    padding-left: 50px;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+h2 {
+    color: white;
+}
+
+.musta {
+    color: black;
+}
+
+.ajat ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ajat li {
+    color: white;
+    line-height: 1.7;
+}
+
+.ajat p {
+    color: white;
+    font-size: 15px;
+}
+
+.paiva {
+    width: 45px;
+    float: left;
+}
+
+.aika {
+    display: block;
+    overflow: hidden;
+}
+
+.yhteystiedot {
+    padding: 2.5rem 0;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+.yhteystiedot p {
+    color: white;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+  }
+  
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+.price .header {
+    background-color: #262626;
+    color: white;
+    font-size: 25px;
+  }
+  
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+  }
+  
+.painike {
+    background-color: #262626;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+@media screen and (max-width: 768px) {
+    .toggle-button  {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .intro2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .tiedot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teksti {
+        text-align: left;
+        padding-left: 0px;
+        font-size: 16px;
+    }
+
+    .teksti2 {
+        text-align: left;
+        padding-left: 0px;
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .kuntosalikuva {
+        margin: auto;
+    }
+
+    .kuntosalikuva2 {
+        padding-left: 0px;
+    }
+
+    .ajat {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .paiva {
+        width: 60px;
+    }
+    
+    .yhteystiedot {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .columns {
+        width: 100%;
+    }
+}
